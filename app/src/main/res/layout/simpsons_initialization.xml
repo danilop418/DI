@@ -1,127 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87CEEB">
+    android:background="@drawable/simpsons_background_placeholder">
 
-    <View
-        android:id="@+id/background_scene"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/simpsons_background_placeholder" /> <androidx.cardview.widget.CardView
-    android:id="@+id/tv_screen_card"
-    android:layout_width="350dp"
-    android:layout_height="400dp"
-    android:layout_centerInParent="true"
-    app:cardBackgroundColor="#FFD900"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="10dp">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="center_horizontal"
-        android:padding="20dp">
-
-        <View
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center_horizontal"
-            android:background="#FF9800"
-            android:layout_marginBottom="15dp" /> <EditText
-        android:id="@+id/username_input"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:hint="Username: El Barto"
-        android:padding="12dp"
-        android:background="@drawable/rounded_edittext_background"
-        android:drawableStart="@drawable/ic_slingshot" android:drawablePadding="10dp"
-        android:layout_marginBottom="10dp"
-        android:textColorHint="#8A000000"
-        android:inputType="textPersonName"
-        android:autofillHints="username"/>
+        android:layout_above="@+id/tv_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-40dp"
+        android:elevation="11dp"
+        android:fontFamily="@font/simpsons_font"
+        android:gravity="center"
+        android:shadowColor="#000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:text="@string/simpsons_title"
+        android:textAllCaps="true"
+        android:textColor="#FDD835"
+        android:textSize="55sp"
+        android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/password_input"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password: D'oh!"
-            android:padding="12dp"
-            android:background="@drawable/rounded_edittext_background"
-            android:drawableStart="@drawable/ic_pretzel" android:drawablePadding="10dp"
-            android:layout_marginBottom="25dp"
-            android:textColorHint="#8A000000"
-            android:inputType="textPassword"
-            android:autofillHints="password"/>
+    <RelativeLayout
+        android:id="@+id/tv_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
 
-        <Button
-            android:id="@+id/login_button"
-            android:layout_width="200dp"
-            android:layout_height="wrap_content"
-            android:text="LOGIN"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:backgroundTint="#FF4438"
-            android:textColor="#FFFFFF"
-            app:cornerRadius="15dp" />
+        <ImageView
+            android:id="@+id/tv_frame"
+            android:layout_width="450dp"
+            android:layout_height="400dp"
+            android:contentDescription="@null"
+            android:elevation="10dp"
+            android:src="@drawable/tv_frame" />
 
-        <TextView
-            android:id="@+id/forgot_password_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Forgot Password? ❓"
-            android:textColor="#000000"
-            android:layout_marginTop="10dp"
-            android:clickable="true"
-            android:focusable="true"
-            style="@style/Widget.AppCompat.Button.Borderless"/>
 
-    </LinearLayout>
-</androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
 
     <TextView
         android:id="@+id/new_user_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New User?"
-        android:textSize="18sp"
-        android:textColor="#000000"
-        android:textStyle="bold"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
         android:layout_margin="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="52dp"
         android:background="#FFD900"
-        android:padding="5dp"
         android:clickable="true"
-        android:focusable="true"/>
-
-    <View
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="30dp"
-        android:background="#795548"
-        android:layout_marginBottom="10dp"/> <View
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="80dp"
-        android:background="#FFC107"
-        android:layout_marginBottom="10dp"
-        android:layout_alignParentEnd="true"/>
-
-    <TextView
-        android:id="@+id/logo_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/tv_screen_card"
-        android:layout_marginBottom="60dp"
-        android:gravity="center"
-        android:text="THE\nSIMPSONS"
+        android:focusable="true"
+        android:padding="5dp"
+        android:text="@string/new_user_text"
         android:textColor="#000000"
-        android:textSize="40sp"
+        android:textSize="18sp"
         android:textStyle="bold" />
+
 </RelativeLayout>

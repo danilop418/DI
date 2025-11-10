@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">InterfazPro</string>
+    <string name="username_hint">Username: El Barto</string>
+    <string name="password_hint">Password: D'oh!</string>
+    <string name="login_button_text">LOGIN</string>
+    <string name="forgot_password_text">Forgot Password? ❓</string>
+    <string name="new_user_text">New User?</string>
+    <string name="simpsons_title">The\nSimpsons</string>
 </resources>
