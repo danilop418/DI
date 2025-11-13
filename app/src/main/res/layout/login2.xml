@@ -18,31 +18,41 @@
 
     <Button
         android:id="@+id/button3"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="370dp"
         android:layout_height="61dp"
         android:layout_marginTop="24dp"
         android:text="E-Mail"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
         android:textSize="18dp"
-        app:strokeWidth="2dp"
-        app:strokeColor="@android:color/white"
-        android:backgroundTint="@color/blue_fondo"
+        app:icon="@drawable/icon_mail"
+        app:iconPadding="16dp"
+        app:iconTint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.61"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp" />
 
     <Button
         android:id="@+id/button4"
+        style="?attr/materialButtonOutlinedStyle"
         android:layout_width="369dp"
         android:layout_height="65dp"
-        android:textSize="18dp"
         android:text="Password"
-        app:strokeWidth="2dp"
-        app:strokeColor="@android:color/white"
-        android:backgroundTint="@color/blue_fondo"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        app:icon="@drawable/icon_password"
+        app:iconPadding="16dp"
+        app:iconTint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.638"
         app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="@android:color/white"
+        app:strokeWidth="2dp"
         tools:layout_editor_absoluteY="513dp" />
 
     <Button
@@ -61,6 +71,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Forgot Password?"
+        app:icon="@drawable/icon_password"
         android:textColor="#ffffff"
         android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,4 +102,13 @@
         app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:buttonTint="@android:color/white"
+        tools:layout_editor_absoluteX="98dp"
+        tools:layout_editor_absoluteY="579dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
