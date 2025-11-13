@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="329dp"
+        android:layout_height="68dp"
+        android:text="CREATE ACCOUNT"
+        android:textSize="20dp"
+        app:backgroundTint="@color/blue_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="332dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="120dp"
+        android:text="SIGN IN"
+        android:textSize="20dp"
+        app:backgroundTint="@color/orange_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="169dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="80dp"
+        android:padding="6dp"
+        android:text="Terms & Conditions"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="304dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/Karina"
+        android:textStyle="bold"
+        android:text="Launch Your App"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="309dp"
+        android:layout_height="287dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/cohete" />
+</androidx.constraintlayout.widget.ConstraintLayout>
