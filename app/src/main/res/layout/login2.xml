@@ -4,111 +4,114 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/blue_fondo"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <ImageView
-        android:id="@+id/imageView4"
-        android:layout_width="332dp"
-        android:layout_height="293dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.578"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/fondo_cohete"
-        tools:layout_editor_absoluteY="120dp" />
-
-    <Button
-        android:id="@+id/button3"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="370dp"
-        android:layout_height="61dp"
-        android:layout_marginTop="24dp"
-        android:text="E-Mail"
-        android:textAlignment="viewStart"
-        android:textColor="@android:color/white"
-        android:textSize="18dp"
-        app:icon="@drawable/icon_mail"
-        app:iconPadding="16dp"
-        app:iconTint="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.61"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4"
-        app:strokeColor="@android:color/white"
-        app:strokeWidth="2dp" />
-
-    <Button
-        android:id="@+id/button4"
-        style="?attr/materialButtonOutlinedStyle"
-        android:layout_width="369dp"
-        android:layout_height="65dp"
-        android:text="Password"
-        android:textAlignment="viewStart"
-        android:textColor="@android:color/white"
-        android:textSize="18dp"
-        app:icon="@drawable/icon_password"
-        app:iconPadding="16dp"
-        app:iconTint="@android:color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.638"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@android:color/white"
-        app:strokeWidth="2dp"
-        tools:layout_editor_absoluteY="513dp" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="355dp"
-        android:layout_height="56dp"
-        android:backgroundTint="@color/blue_button"
-        android:text="GO!"
-        android:textSize="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="627dp" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Forgot Password?"
-        app:icon="@drawable/icon_password"
-        android:textColor="#ffffff"
-        android:textSize="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="691dp" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Keep me loged in"
-        android:textColor="#ffffff"
-        android:textSize="18dp"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="590dp" />
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="339dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="64dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/Karina"
         android:text="Create Account"
         android:textColor="#ffffff"
-        android:textSize="36dp"
+        android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.791"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="280dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12"
+        app:srcCompat="@drawable/fondo_cohete" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/caja_texto_redonda"
+        android:drawableStart="@drawable/icon_mail"
+        android:drawablePadding="12dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#B3FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/caja_texto_redonda"
+        android:drawableStart="@drawable/icon_password"
+        android:drawablePadding="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#B3FFFFFF"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
 
     <CheckBox
         android:id="@+id/checkBox2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
         app:buttonTint="@android:color/white"
-        tools:layout_editor_absoluteX="98dp"
-        tools:layout_editor_absoluteY="579dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Keep me logged in"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/checkBox2"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/blue_button"
+        android:text="GO!"
+        android:textSize="18sp"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Forgot Password?"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
